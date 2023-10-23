@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum de Jose</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./cv.js"></script>
+    <style>
+      .namePerfil{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+        color: #000;
+        font-style: italic;
+      }
+      .namePerfil2{
+        font-family: 'Roboto', sans-serif;
+        color: #545454;
+        font-style: italic;
+      }
+      .navtext{
+        font-family: 'Roboto';
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+      }
+      nav>.row>div{
+        cursor: pointer;
+      }
+      nav>.row>div:hover{
+        background-color: #fff !important;
+      }
+      .raya{
+        font-size: 60px;
+      }
+      .active{
+        background-color: #fff;
+      }
+      .habilidades-icons{
+        display: flex; align-items: center; padding-top: 6px; gap: 5px;
+      }
+
+      @media only screen and (max-width: 800px) {
+         .namePerfil{
+        font-size: 28px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark">
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-6 bg-warning d-flex justify-content-center align-items-center">
+            <p class="text-center fst-italic pt-3 fw-bold">Entra en mi github y <br class="d-block d-md-none"> <a href="#">mira el código fuente</a></p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-6 bg-light">
+          <div class="row">
+            <div class="col-12 col-md-4 p-0">
+                <img class="img-fluid" style="transform: scaleX(-1); " src="https://mcusercontent.com/0b295a66caf0c9124725811d6/images/9350126f-c51a-a9c7-3617-25e91a42e014.png" alt="">
+            </div>
+            <div class="col-12 col-md-8 mt-3 mt-md-0 d-flex justify-content-center align-items-center flex-column">
+                  <h2 class="namePerfil">JOSE TRUJILLO SILVA</h2>
+                  <p class="namePerfil2">Diseñador, maquetador y desarrollador web</p>
+            </div>
+          </div>
+          <nav>
+            <div class="row bg-warning justify-content-center">
+              <div id="sobreMi" class="active menu col-12 col-md-2 d-flex justify-content-center align-items-center pt-2 flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill pt-2" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+                <p class="navtext">SOBRE MÍ</p>
+              </div>
+              <div id="formacion" class="col-12 col-md-2 menu d-flex justify-content-center align-items-center pt-2 flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                  <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+                </svg>
+                <p class="navtext">FORMACIÓN</p>
+              </div>
+              <div id="exp" class="col-12 col-md-2 menu d-flex justify-content-center align-items-center pt-2 flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                  <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                </svg>
+                <p class="navtext">EXPERIENCIA</p>
+              </div>
+              <div id="portfolio" class="col-12 col-md-2 menu d-flex justify-content-center align-items-center pt-2 flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                  <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+                </svg>
+                <p class="navtext">PORTFOLIO</p>
+              </div>
+              <div id="contact" class="col-12 col-md-2 menu d-flex justify-content-center align-items-center pt-2 flex-column">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                <p class="navtext">CONTACTO</p>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+
+
+          <div class="row main" id="main01">
+            <div class="col">
+              <div class="row">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">SOBRE MÍ</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11 col-md-9 fst-italic" style="text-align: justify;">
+                  <p>"Soy un desarrollador web en constante aprendizaje y formación. Tengo conocimientos no solo en programación, sino además en diseño gráfico. Manejo aceptable de varios programas de diseño como Illustrator, Photoshop, Inskape y Corel Draw, en especial, este último. También manejo bien algunos editores de texto como Vs Studio Code, o algunos IDEs como eclipse, netbeans entre otros. En mi tiempo libre trabajo también con sistemas linux como ubuntu, debian y otros menos conocidos como Artix linux o fedora. Desarrollo sobre todo en java, javascript, css, html, php y otros frameworks como boostrap."</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">INFORMACIÓN PERSONAL</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-10 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-secondary text-end">
+                      <p class="text-end p-0">Nombre:</p>
+                    </div>
+                    <div class="col-6 fw-bold">
+                      <p class="p-0">Jose</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-secondary text-end">
+                      <p class="text-end p-0">Apellidos:</p>
+                    </div>
+                    <div class="col-6 fw-bold">
+                      <p class="p-0">Trujillo Silva</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-secondary p-0">
+                      <p class="text-end p-0">Nacimiento:</p>
+                    </div>
+                    <div class="col-6 fw-bold">
+                      <p class="p-0">13/09/1992</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-secondary p-0">
+                      <p class="text-end p-0">Nacionalidad:</p>
+                    </div>
+                    <div class="col-6 fw-bold">
+                      <p class="p-0">Española</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-0">
+                      <p class="text-center fst-italic">-1/5-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5 bg-warning">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-1">
+                      <p class="text-center"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          
+          <div class="row main" id="main02">
+            <div class="col">
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">FORMACIÓN</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center text-md-end m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 10px;">ACTUALMENTE</p>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Técnico Superior en <br class="d-none d-md-block"> administración de sistemas y redes</p>
+                    </div>
+                    <div class="text-center text-md-end col-md-6 text-secondary">
+                      <p class="p-0 fst-italic">-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center text-md-end m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2022-2023</p>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Técnico Superior en <br class="d-none d-md-block"> desarrollo de app web</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-secondary">
+                      <p class="p-0 fst-italic">Funciones: Creacción y desarrollo de aplicaciones web con php, javascript, css y html5. Despliegue de app en Apache Server y creación de base de datos con Maria DB y SQL. También aprendizaje por cuenta propia de css avanzado y node js.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-end m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2016-2017</p>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Técnico en Serigrafía Atística</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-secondary">
+                      <p class="p-0 fst-italic text-center text-md-end">Funciones: Diseño y planchado manual de camisetas, cartulinas, etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">CONOCIMIENTOS TÉCNICOS ADQUIRIDOS</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 p-0 fw-bold text-center">
+                      <p class="p-0">Curso Html y Css (Platzi)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 p-0 fw-bold text-center">
+                      <p class="p-0">Curso Flexbox y Grid (OpenWebinar)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 p-0 fw-bold text-center">
+                      <p class="p-0">Curso Javascript Profesional
+                        (OpenWebinar)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-12 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 p-0 fw-bold text-center">
+                      <p class="p-0">Curso Php (OpenWebinar)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">OTRAS HABILIDADES TÉCNICAS</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-6 p-0 fw-bold">
+                      <p class="text-end p-0">COREL DRAW</p>
+                    </div>
+                    <div class="col-6 text-secondary">
+                      <div class="habilidades-icons" style="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-6 p-0 fw-bold">
+                      <p class="text-end p-0">PHOTOSHOP</p>
+                    </div>
+                    <div class="col-6 text-secondary">
+                      <div class="habilidades-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-6 p-0 fw-bold">
+                      <p class="text-end p-0">INSKAPE</p>
+                    </div>
+                    <div class="col-6 text-secondary">
+                      <div class="habilidades-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-6 p-0 fw-bold">
+                      <p class="text-end p-0">ILLUSTRATOR</p>
+                    </div>
+                    <div class="col-6 text-secondary">
+                      <div class="habilidades-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle-fill text-warning" viewBox="0 0 16 16">
+                          <circle cx="8" cy="8" r="8"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-circle text-warning" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">IDIOMAS</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-6 p-0 fw-bold">
+                      <p class="text-end p-0">INGLÉS</p>
+                    </div>
+                    <div class="col-6 text-secondary">
+                      <p class="p-0 fst-italic">NIVEL MEDIO: B1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-6 p-0 fw-bold">
+                      <p class="text-end p-0">ESPAÑOL</p>
+                    </div>
+                    <div class="col-6 text-secondary">
+                      <p class="p-0 fst-italic">NATIVO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">HOBBIES E INTERESES</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 d-flex justify-content-center gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#212529" width="30" height="30" viewBox="0 0 512 512"><path d="M86.6 64l85.2 85.2C194.5 121.7 208 86.4 208 48c0-14.7-2-28.9-5.7-42.4C158.6 15 119 35.5 86.6 64zM64 86.6C35.5 119 15 158.6 5.6 202.3C19.1 206 33.3 208 48 208c38.4 0 73.7-13.5 101.3-36.1L64 86.6zM256 0c-7.3 0-14.6 .3-21.8 .9C238 16 240 31.8 240 48c0 47.3-17.1 90.5-45.4 124L256 233.4 425.4 64C380.2 24.2 320.9 0 256 0zM48 240c-16.2 0-32-2-47.1-5.8C.3 241.4 0 248.7 0 256c0 64.9 24.2 124.2 64 169.4L233.4 256 172 194.6C138.5 222.9 95.3 240 48 240zm463.1 37.8c.6-7.2 .9-14.5 .9-21.8c0-64.9-24.2-124.2-64-169.4L278.6 256 340 317.4c33.4-28.3 76.7-45.4 124-45.4c16.2 0 32 2 47.1 5.8zm-4.7 31.9C492.9 306 478.7 304 464 304c-38.4 0-73.7 13.5-101.3 36.1L448 425.4c28.5-32.3 49.1-71.9 58.4-115.7zM340.1 362.7C317.5 390.3 304 425.6 304 464c0 14.7 2 28.9 5.7 42.4C353.4 497 393 476.5 425.4 448l-85.2-85.2zM317.4 340L256 278.6 86.6 448c45.1 39.8 104.4 64 169.4 64c7.3 0 14.6-.3 21.8-.9C274 496 272 480.2 272 464c0-47.3 17.1-90.5 45.4-124z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#212529" width="30" height="30" viewBox="0 0 448 512"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#212529" width="40" height="30" viewBox="0 0 640 512"><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#212529" height="30" viewBox="0 0 384 512"><path d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3l-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208H336V184c0-13.3 10.7-24 24-24s24 10.7 24 24v55.8c0 .1 0 .2 0 .2s0 .2 0 .2V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V272H296.6c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59h4.2c15.6 0 27.1 14.7 23.3 29.8z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="30" fill="#212529" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                  viewBox="0 0 100 100"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                  <g id="Capa_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"/>
+                    <g id="_2237959913680">
+                    <path class="fil0" d="M8 70.95c0,13.26 18.8,-3.7 23.07,-10.93 0.88,-1.47 1.18,-1.92 2.22,-3.78 0.39,-0.68 0.67,-1.28 1.07,-1.94 1.24,-2.05 0.36,-0.87 1.64,-2.35 0,19.01 2.65,15.3 -12.83,25.17 -3.7,2.36 -8.21,5.92 -6.15,10.73 1.24,2.87 3.48,3.82 6.44,4.1l8.54 0c-1.4,-5.86 -1.92,-10.78 10.71,-13.29 5.6,-1.11 12.15,-2.71 19.29,-2.71l0 3c-4.43,0.1 -11.54,1.7 -16.44,2.56 -7.24,1.28 -10.56,1.41 -10.56,9.44 2.07,0.48 4.67,0.8 7.58,1l32.42 0c3.84,0 17.1,-4.18 -0.19,-15.81 -12.29,-8.27 -10.81,-5.21 -10.81,-24.19l4.55 7.44c2.18,3.68 2.14,3.97 5.16,6.85 3.34,3.16 18.29,16.78 18.29,4.71 0,-3.39 -6.75,-7.97 -9.16,-9.85 -14.17,-11.05 -0.03,-29.15 -34.84,-29.15 -27.26,0 -18.67,18.37 -30.22,28.77 -2.41,2.17 -9.78,6.86 -9.78,10.23z"/>
+                    <path class="fil0" d="M39 17.95c0,16.15 22,16.15 22,0 0,-13.2 -22,-13.2 -22,0z"/>
+                    </g>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-0">
+                      <p class="text-center fst-italic">-2/5-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5 bg-warning">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-1">
+                      <p class="text-center"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          
+          <div class="row main" id="main03">
+            <div class="col">
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">EXPRERIENCIA LABORAL</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center text-md-end m-0 text-secondary" style="font-size: 14px; font-style: italic;">2023</p>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Diseñador y Desearrollador web <br> Pick And Roll (Madrid)</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-secondary">
+                      <p class="p-0 fst-italic">Funciones: Diseño y desarrollo de páginas webs, maquetación y edición de contenidos: imágenes, texto, video, etc. Diseño con Wordpress, boostrap y maquetación de newsletters. Programas usados: Microsoft Dynamic, Mailchimp, Marketing Cloud, Basecamp, Teams, Filezilla, Vs code, etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-center text-md-end m-0 text-secondary" style="font-size: 14px; font-style: italic;">2019</p>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Diseñador y Dependiente <br> Xprint (Córdoba)</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-secondary">
+                      <p class="p-0 fst-italic">Funciones: Apertura y cierre de tienda, labores de papelería y atención al público, diseño e implementación en máquina de lonas, camisetas, cartelería, tarjeta de visita, etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-end m-0 text-secondary" style="font-size: 14px; font-style: italic; padding-right: 8px;">2017-2018</p>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Peón de mantenimiento <br> (Granada) Ayuntamiento de Las Gabias</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-secondary">
+                      <p class="p-0 fst-italic">Funciones: Limpieza de instalaciones deportivas, mantenimiento y riego de campo de futbol, control y gestión de maquinaria de luces del polideportivo, etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col-6 text-end d-flex justify-content-center flex-column align-items-center">
+                      <p class="text-end m-0 text-secondary" style="font-size: 14px; font-style: italic;">2017</p>
+                    </div>
+                    <div class="col-6">
+                        &nbsp;
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-11">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 p-0 fw-bold">
+                      <p class="text-center text-md-end p-0">Prácticas laborales Grado Medio <br>
+                        Serigrafía Artística</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-secondary">
+                      <p class="p-0 fst-italic">Funciones: Diseño y planchado manual de camisetas, cartulinas, etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">HARD SKILLS</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Inteligencia Artificial:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Bard y YouCode.</p>
+                  </ul>
+                </div>
+          </div>
+              <div class="row justify-content-center">
+                    <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                      <ul class="col-9 col-md-5">
+                        <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Linux diferentes distribuciones:</p></li>
+                        <p class="p-0 fst-italic text-secondary">artix linux, arch linux, ubuntu, ubuntu server, fedora, redhat, etc.</p>
+                      </ul>
+                    </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Diseño gráfico:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Edición de imágenes, gifs y logos.</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Diseño web:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Creación y diseño de ladings pages, newsletters, one pages, aplicaciones web, etc.</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Wordpress:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Conocimientos básicos de wordpress, así como gestión de algunos plugins, Edición css en wordpress, etc.</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Docker y Node js:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Conocimientos básicos de Node js y Docker</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Java:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Conocimientos básicos de Java.</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-9 col-md-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;">Html, css y js:</p></li>
+                    <p class="p-0 fst-italic text-secondary">Conocimientos medios de html, css y javascript.</p>
+                  </ul>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">SOFT SKILLS</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 fw-bold d-flex justify-content-center">
+                  <ul class="col-5">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Responsable.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Creativo.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Resolutivo.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Pensamiento crítico.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Colaboración y Compañerismo.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Atención a los detalles.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Flexible.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Ético en el trabajo.</p></li>
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 text-dark" style="font-size: 18px;">Honesto y transparente.</p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">PREFERENCIAS LABORALES</p>
+                </div>
+              </div>
+              <div class="row justify-content-center py-3">
+                <div class="col-12 p-0 fw-bold d-flex flex-column align-items-center">
+                  <ul class="col-9 m-0 d-flex justify-content-center">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;"> Tiempo y longevidad:</p></li>
+                  </ul>
+                  <div class="row justify-content-center">
+                    <div class="col-9">
+                      <p class="p-0 text-center fst-italic text-secondary"> La prioridad para mi más importante. Es la seguridad de que voy a quedarme en la empresa, para poder comenzar a enmarcar mi camino en la formación de esa empresa. Sabemos que hay muchas empresas que requieren un aprendizaje especial, ya que son empresas que poseen una forma de trabajar única y diferente.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center py-3">
+                <div class="col-12 p-0 fw-bold d-flex flex-column align-items-center">
+                  <ul class="col-9 m-0 d-flex justify-content-center">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;"> Utilidad y valor en la empresa:</p></li>
+                  </ul>
+                  <div class="row justify-content-center">
+                    <div class="col-9">
+                      <p class="p-0 text-center fst-italic text-secondary">  La utilidad y valor en la empresa es el valor que tengo dentro de la empresa, creo que es otro de los puntos más importantes. Sentirte parte del equipo y de la empresa y no ser tratado de mala forma.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center py-3">
+                <div class="col-12 p-0 fw-bold d-flex flex-column align-items-center">
+                  <ul class="col-9 m-0 d-flex justify-content-center">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;"> Aprendizaje y formación:</p></li>
+                  </ul>
+                  <div class="row justify-content-center">
+                    <div class="col-9">
+                      <p class="p-0 text-center fst-italic text-secondary"> El aprendizaje de los recursos de una empresa es imprescindible para que puedas dar posteriormente todo de ti mismo y aportes ese valor a la empresa.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center py-3">
+                <div class="col-12 p-0 fw-bold d-flex flex-column align-items-center">
+                  <ul class="col-9 m-0 d-flex justify-content-center">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;"> Flexibilidad y teletrabajo:</p></li>
+                  </ul>
+                  <div class="row justify-content-center">
+                    <div class="col-9">
+                      <p class="p-0 text-center fst-italic text-secondary"> Aunque no le doy tanta importancia a las vacaciones, si que me parece importante que la empresa te pueda otorgar facilidades para que puedas realizar tu vida con normalidad. Y por supuesto, el teletrabajo a mi me otorga una mayor concentración en mis tareas, por eso es importante.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center py-3">
+                <div class="col-12 p-0 fw-bold d-flex flex-column align-items-center">
+                  <ul class="col-9 m-0 d-flex justify-content-center">
+                    <li class="text-warning" style="list-style: square; font-size: 25px;"><p class="p-0 fst-italic text-dark" style="font-size: 18px;"> Ambiente laboral:</p></li>
+                  </ul>
+                  <div class="row justify-content-center">
+                    <div class="col-9">
+                      <p class="p-0 text-center fst-italic text-secondary"> Un ambiente de trabajo que no es adecuado puede ser uno de los mayores problemas no solo para uno mismo, sino además para la empresa. La organización y unos compañeros que te ayuden en tus tareas al igual que tu a ellos, es algo de lo más importante porque no solo te ayuda a ti mismo, sino además a la propia empresa. Una empresa que no tiene un buen ambiente de trabajo por un largo tiempo no dura.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-0">
+                      <p class="text-center fst-italic">-3/5-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5 bg-warning">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-1">
+                      <p class="text-center"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="row main" id="main05">
+            <div class="col">
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">DIRECCIÓN</p>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <br>
+                <br>
+                <p class="fst-italic">Madrid 28046</p>
+                <p class="fst-italic">Mauricio Legendre, 15-6ºF</p>
+                <p class="fst-italic">España</p>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">TELÉFONO DE CONTACTO</p>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                  <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                </svg>
+                <br>
+                <br>
+                <p class="fst-italic">+34 643 35 88 03</p>
+              </div>
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">REDES DE CONTACTO</p>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                </svg>
+                <br>
+                <br>
+                <p class="fst-italic">Linkedin: <a class="fst-italic" href="https://www.linkedin.com/in/jose-trujillo-silva-04184720a/">https://www.linkedin.com/in/jose-trujillo-silva-04184720a/</a></a></p>
+              </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-0">
+                      <p class="text-center fst-italic">-5/5-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5 bg-warning">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-1">
+                      <p class="text-center"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          
+          <div class="row main" id="main04">
+            <div class="col">
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <p class="text-center p-0 m-0 text-warning fw-bold raya">-</p>
+                  <p class="text-center fw-bold">PORTFOLIO</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  <br>
+                  <br>
+                  <p><a href="https://github.com/JoseTrujilloSilva">Entra a mis repositorios</a></p>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-0">
+                      <p class="text-center fst-italic">-4/5-</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-5 bg-warning">
+                <div class="col-9 d-flex justify-content-center flex-column align-items-center">
+                  <div class="row justify-content-center">
+                    <div class="col text-center p-1">
+                      <p class="text-center"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
